@@ -5,10 +5,11 @@ pipeline {
             steps {
                 sh 'echo "Hello production!"'
             }
-		stage('Test'){
-			steps {
-				sh 'echo "Testing .."'
-			}
+	}
+	stage('Test'){
+	    steps {
+		sh 'echo "Testing .."'
+	    }
         }
     }
 }
